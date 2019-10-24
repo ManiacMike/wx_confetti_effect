@@ -1,10 +1,6 @@
-<view class="root">
-<!-- <view  animation="{{animationData}}"  style="background:red;height:100rpx;width:100rpx;" bindtap='tapBox'></view> -->
-<view class="confettis">
-<view class='confetti' animation="{{item.animationData}}" wx:for="{{confettis}}" style="width:{{item.width}}rpx;height:{{item.height}}rpx;left:{{item.position.initX}}px;top:{{item.position.initY}}rpx;background-color:{{item.color}};">
-</view>
-</view>
-
-<button type='warn' bindtap='showConfetti'>触发彩纸</button>
-
+<!-- 引用组件的页面模版 -->
+<view>
+  <my-component id='confetti' duration="8000">
+  </my-component>
+  <button type='warn' bindtap='showConfetti'>触发彩纸</button>
 </view>

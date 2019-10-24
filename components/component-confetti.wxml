@@ -1,0 +1,8 @@
+<!-- 组件模板 -->
+<view class="wrapper">
+  <view class="confettis">
+  <view class='confetti' animation="{{item.animationData}}" wx:for="{{confettis}}" style="width:{{item.width}}rpx;height:{{item.height}}rpx;left:{{item.position.initX}}px;top:{{item.position.initY}}rpx;background-color:{{item.color}};" wx:key="i">
+  </view>
+  </view>
+
+</view>

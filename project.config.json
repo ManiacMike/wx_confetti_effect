@@ -11,6 +11,8 @@
 	"libVersion": "1.9.94",
 	"appid": "touristappid",
 	"projectname": "wx_confetti_effect",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,
