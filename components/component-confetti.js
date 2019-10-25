@@ -20,6 +20,7 @@ Component({
     width: wx.getSystemInfoSync().windowWidth,
     height: wx.getSystemInfoSync().windowHeight,
     animationList: [],
+    confettisDisplay: false
   },
 
   /**
@@ -27,7 +28,12 @@ Component({
    */
   methods: {
     showConfetti() {
-      var DURATION = this.properties.duration.value;
+      var DURATION = this.properties.duration;
+      this.setData({ confettisDisplay: true })
+      var that = this;
+      setTimeout(function () {
+        that.setData({ confettisDisplay: false })
+      }, DURATION)
       clearInterval(this.timeIntervalId1);
       clearInterval(this.timeIntervalId2);
       let num = this.data.PAPER_LENGTH;
